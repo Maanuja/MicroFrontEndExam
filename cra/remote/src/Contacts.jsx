@@ -27,6 +27,7 @@ const Contact = styled('li')`
 
   table {
     text-align: left;
+    margin-top: 12px;
   }
 `;
 

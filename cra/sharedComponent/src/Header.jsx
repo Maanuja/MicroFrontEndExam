@@ -14,12 +14,13 @@ const Links = styled('ul')`
   gap: 32px;
   padding: 8px 32px;
   list-style: none;
+
   a {
     text-decoration: none;
   }
 
-  a.active {
-    color: red;
+  .active a {
+    text-decoration: underline;
   }
 `;
 
