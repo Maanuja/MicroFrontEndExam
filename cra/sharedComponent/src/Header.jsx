@@ -1,17 +1,26 @@
 import styled from 'styled-components';
 
-const Component = styled('header')`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+const Title = styled('h1')`
+  text-align: center;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 40px;
 `;
 
 const Links = styled('ul')`
   display: flex;
+  font-family: 'Oswald', sans-serif;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: flex-end;
+  gap: 32px;
+  padding: 8px 32px;
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+
+  a.active {
+    color: red;
+  }
 `;
 
 const Header = ({ title }) => {
@@ -28,13 +37,13 @@ const Header = ({ title }) => {
     },
     {
       id: 3,
-      name: 'Share',
+      name: 'Shared',
       url: 'http://localhost:3010/',
     },
   ];
 
   return (
-    <Component>
+    <div>
       <nav>
         <Links>
           {links.map(link => (
@@ -44,8 +53,8 @@ const Header = ({ title }) => {
           ))}
         </Links>
       </nav>
-      <h1>{title}</h1>
-    </Component>
+      <Title>{title}</Title>
+    </div>
   );
 };
 export default Header;
