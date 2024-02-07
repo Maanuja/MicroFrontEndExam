@@ -5,7 +5,7 @@ const RemoteButton = React.lazy(() => import('remote/Button'));
 
 const App = () => (
   <div>
-    <Header/>
+    <Header title={"This is the host landing page"}/>
     <h1>Basic Host-Remote</h1>
     <h2>Host</h2>
     <React.Suspense fallback="Loading Button">
