@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Header from '../../sharedComponent/src/Header';
 import Contacts from './Contacts';
 import Footer from '../../sharedComponent/src/Footer';
+import Message from './Message';
 
 const Component = styled('div')`
   padding: 0;
@@ -22,6 +23,10 @@ const App = () => (
   <Component>
     <Header title={'Remote'} />
     <Main>
+      <Message
+        text={'Welcome to the Remote !'}
+        image={'https://api.multiavatar.com/910eb4bc91c6027c06.svg'}
+      />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco

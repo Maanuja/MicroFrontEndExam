@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../../sharedComponent/src/Header';
 import Footer from '../../sharedComponent/src/Footer';
+import Message from './Message';
+
 const RemoteButton = React.lazy(() => import('remote/Button'));
 import styled from 'styled-components';
 
@@ -22,6 +24,10 @@ const App = () => (
   <Component>
     <Header title={'Host'} />
     <Main>
+      <Message
+        text={'Welcome to the Host !'}
+        image={'https://api.multiavatar.com/e06870991065ecade8.svg'}
+      />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco

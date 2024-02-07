@@ -57,18 +57,20 @@ const Contacts = () => {
               <b>{contact.name}</b>
             </span>
             <table>
-              <tr>
-                <th>Mail :</th>
-                <td>{contact.email}</td>
-              </tr>
-              <tr>
-                <th>Phone :</th>
-                <td>{contact.phone}</td>
-              </tr>
-              <tr>
-                <th>Website :</th>
-                <td>{contact.website}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <th>Mail :</th>
+                  <td>{contact.email}</td>
+                </tr>
+                <tr>
+                  <th>Phone :</th>
+                  <td>{contact.phone}</td>
+                </tr>
+                <tr>
+                  <th>Website :</th>
+                  <td>{contact.website}</td>
+                </tr>
+              </tbody>
             </table>
           </Contact>
         ))}
